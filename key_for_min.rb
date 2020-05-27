@@ -4,6 +4,7 @@
 #hash = {:blake => 500, :ashley => 2, :adam => 1}
 
 def key_for_min_value(name_hash)
+  if name_hash = {}
   smallest_value = 1000
   smallest_name = ""
   name_hash.each do |name, num|
